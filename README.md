@@ -14,10 +14,10 @@ find the best model which predicts patient's review has positive or negative eff
 
 ## Dataset:
 
-Dataset comes from UCI ML Respository, https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com. The dataset provides 
-patient reviews on specific drugs along with related conditions and a 10 star patient rating reflecting overall patient satisfaction.
+Dataset comes from UCI ML Respository: <a href = https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com>.
 
-Dataset was cleaned, and has 215,000 rows and 6 features. Two important features used in our analysis, description as below:
+The dataset provides patient reviews on specific drugs along with related conditions and a 10 star patient rating reflecting overall patient 
+satisfaction. Dataset was cleaned, and has 215,000 rows and 6 features. Two important features used in our analysis, description as below:
 
 `review`(text): Patient review after taking drug (categorical).
 
@@ -106,7 +106,7 @@ $ X = WH $
 I chose n-components as 2 for two topics, and ran NMF topic model which derived words belonging to positive and negative reviews. Also, using python library
 pyLDAVis, visualization clearly showed words belonging to 2 different topics, and saved as nmf.html file.
 
-html link: C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html
+html link: <a href = C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html>
 
 <p align="center">
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Screenshot%202024-04-10%20122228.jpg" width = "600" height="451">
@@ -122,9 +122,7 @@ Finally, We also looked into Topic Modeling, this was very helpful to distinguis
 
 **Next Steps:**
 
-For Phase 2, we can look into using Word2Vec algorithm, widely used word representation technique. This type of word representation or Word Embeddings can be used to infer semantic similarity between words and phrases, expand queries, surface related concepts and more. 
-
-Also how to correct spelling mistakes before running next model using TextBlob or PySpellCheck python libraries.
+For Phase 2, we can look into using Word2Vec algorithm, widely used word representation technique. This type of word representation or Word Embeddings can be used to infer semantic similarity between words and phrases, expand queries, surface related concepts and more. Also how to correct spelling mistakes before running model using TextBlob or PySpellCheck python libraries.
 
 ## Repository Structure
 
