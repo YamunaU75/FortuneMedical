@@ -13,7 +13,7 @@ find the best model which predicts patient's review has positive or negative eff
 
 ## Dataset:
 
-Dataset comes from UCI ML Respository: <a href = "https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com">
+Dataset comes from UCI ML Respository: https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com
 
 The dataset provides patient reviews on specific drugs along with related conditions and a 10 star patient rating reflecting overall patient 
 satisfaction. Dataset was cleaned, and has 215,000 rows and 6 features. Two important features used in our analysis, description as below:
@@ -26,7 +26,6 @@ satisfaction. Dataset was cleaned, and has 215,000 rows and 6 features. Two impo
 
 Dataset has 215K rows and 6 columns, dropped rows with missing values. Encoded column `rating` as 1 for ratings 6-10 and 0 for ratings 1-5. 
 Visualizing positive review words and negative review words after preprocessing through WordCloud.
-
 <p align="center">
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Pos_WordCl.jpeg" width = "900" height="675">
 </p>
@@ -105,7 +104,7 @@ $ X = WH $
 I chose n-components as 2 for two topics, and ran NMF topic model which derived words belonging to positive and negative reviews. Also, using python library
 pyLDAVis, visualization clearly showed words belonging to 2 different topics, and saved as nmf.html file.
 
-html link: <a href = "C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html">
+html link: https://C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html
 
 <p align="center">
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Screenshot%202024-04-10%20122228.jpg" width = "600" height="451">
