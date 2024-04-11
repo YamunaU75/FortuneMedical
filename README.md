@@ -1,6 +1,12 @@
 # Fortune Medical Associates (Predicting Drug Review Results)
 **By Yamuna Umapathy**
 
+<p align="center">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/TopPicture1.jpg" width = "600" height="451">
+</p>
+
+
+
 ## Business Understanding:
 
 Our Stakeholder Fortune Medical Associates wants us to classify Positive & Negative ratings from given Patient's Drug Review results. We have to
@@ -8,10 +14,10 @@ find the best model which predicts patient's review has positive or negative eff
 
 ## Dataset:
 
-Dataset comes from UCI Machine Learning Respository, https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com. The dataset provides 
+Dataset comes from UCI ML Respository, https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com. The dataset provides 
 patient reviews on specific drugs along with related conditions and a 10 star patient rating reflecting overall patient satisfaction.
 
-Dataset was cleaned, and has 215,000 rows and 2 important features to be used for our analysis. Features description as below:
+Dataset was cleaned, and has 215,000 rows and 6 features. Two important features used in our analysis, description as below:
 
 `review`(text): Patient review after taking drug (categorical).
 
@@ -23,7 +29,7 @@ Dataset has 215K rows and 6 columns, dropped rows with missing values. Encoded c
 Visualizing positive review words and negative review words after preprocessing through WordCloud.
 
 <p align="center">
-    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Pos_WordCl2.jpeg" width = "600" height="451">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Pos_WordCl2.jpg" width = "700" height="480">
 </p>
 
 ## Preprocessing:
@@ -100,7 +106,7 @@ $ X = WH $
 I chose n-components as 2 for two topics, and ran NMF topic model which derived words belonging to positive and negative reviews. Also, using python library
 pyLDAVis, visualization clearly showed words belonging to 2 different topics, and saved as nmf.html file.
 
-html link: http://localhost:8888/edit/FortuneMedical/nmf_topics.html
+html link: C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html
 
 <p align="center">
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Screenshot%202024-04-10%20122228.jpg" width = "600" height="451">
