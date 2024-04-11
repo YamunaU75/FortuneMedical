@@ -72,9 +72,9 @@ Linear Support Vector Classifier as first model, works often faster and more eff
 
 Using Naive Bayes as second model, which is probabilistic classifier that assumes independence between features (words) given the class. It is known for its simplicity and efficiency and can work well with text data (Input). Naive Bayes classifiers are based on the Bayes' theorem and make predictions by calculating the probability of a class given the observed features. They can handle high-dimensional data efficiently, making them suitable for text classification tasks.
 
-Logistic Regression as third model, another popular choice for binary classification with text data. It models the relationship between the features and the log-odds of the target class, allows to estimate the probability of the target class.
+Random Forest as third model, another popular choice for binary classification with text data, and works efficiently for complexity. Choose Random Forest model which scored the best for randomized search CV option. 
  
-Meta model: Logistic Regression. Stacking outperformed all other models, and scored **best Accuracy score 80.3**.
+Meta model: Logistic Regression. Stacking outperformed all other models, and scored **best Accuracy score 83.33**.
 
 **Confusion Matrix for Stacking Model:**
 <p align="center">
@@ -89,7 +89,7 @@ if they have any questions.
 
 **Visualizing Feature Importance**
 <p align="center">
-    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Top15Feature_Stmodel.jpeg" width = "600" height="451">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Top15Feature_Stmodel.jpeg" width = "650" height="400">
 </p>
 
 ## Topic Modeling:
@@ -102,10 +102,9 @@ $ X = WH $
 - $ W $ encodes the importance of each token in the fitted topics. 
 - $ H $ encodes the weight of the fitted topics for each document.
 
-I chose n-components as 2 for two topics, and ran NMF topic model which derived words belonging to positive and negative reviews. Also, using python library
-pyLDAVis, visualization clearly showed words belonging to 2 different topics, and saved as nmf.html file.
+I chose n-components as 3 for two topics, and ran NMF topic model which derived words belonging to health condition, assuming 3 topics are for Anxiety, Birth Control and Pain. Also, using python library pyLDAVis, visualization clearly showed words belonging to 3 different topics, and saved as nmf.html(link below).
 
-html link: file:///C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html#topic=0&lambda=1&term=
+html link: file:///C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html#topic=2&lambda=1&term=
 
 <p align="center">
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Screenshot%202024-04-10%20122228.jpg" width = "600" height="451">
@@ -117,7 +116,7 @@ Based on model evaluation, Stacking Model using base models (Linear SVC, Naive B
 
 Confusion matrix and Classification report implies that our Stakeholder can focus on True Negative and False Positive, means patient's Drug effect was Negative, these patients needs immediate follow up to diagnose why Drug failed to work.
 
-Finally, We also looked into Topic Modeling, this was very helpful to distinguish between Posive and Negative ratings clearly. Topic Modeling helped us to visualize topics through pyLDAvis Visualization.
+Finally, We also looked into Topic Modeling, this was very helpful to distinguish different Topics (`condition`) assuming Anxiety, BirthControl or Infertility, Pain. Also using python library pyLDAvis, we were able to visualize different topics with words associated with the respective topics.
 
 **Next Steps:**
 
