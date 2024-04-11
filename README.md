@@ -2,7 +2,7 @@
 **By Yamuna Umapathy**
 
 <p align="center">
-    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/TopPicture1.jpg" width = "600" height="451">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/TopPicture1.jpg" width = "700" height="204">
 </p>
 
 
@@ -29,7 +29,7 @@ Dataset has 215K rows and 6 columns, dropped rows with missing values. Encoded c
 Visualizing positive review words and negative review words after preprocessing through WordCloud.
 
 <p align="center">
-    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Pos_WordCl2.jpg" width = "700" height="480">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Pos_WordCl2.jpg" width = "1000" height="700">
 </p>
 
 ## Preprocessing:
