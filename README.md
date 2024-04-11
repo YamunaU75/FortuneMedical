@@ -102,17 +102,17 @@ $ X = WH $
 - $ W $ encodes the importance of each token in the fitted topics. 
 - $ H $ encodes the weight of the fitted topics for each document.
 
-I chose n-components as 3 for two topics, and ran NMF topic model which derived words belonging to health condition, assuming 3 topics are for Anxiety, Birth Control and Pain. Also, using python library pyLDAVis, visualization clearly showed words belonging to 3 different topics, and saved as nmf.html(link below).
+I chose n-components as 3 for two topics, and ran NMF topic model which derived words belonging to health condition, assuming 3 topics are for Anxiety, Birth Control and Pain. Also, using python library pyLDAVis, which was helpful to visualize 3 different topics, saved as nmf.html file(link below).
 
 html link: file:///C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html#topic=2&lambda=1&term=
 
 <p align="center">
-    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Screenshot%202024-04-10%20122228.jpg" width = "600" height="451">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/TopicModeling.jpeg" width = "600" height="400">
 </p>
 
 ## Conclusion:
 
-Based on model evaluation, Stacking Model using base models (Linear SVC, Naive Bayes & Logistic Regression) performed the best accuracy score 80.3 compared to others. We are focussing on metrics Accuracy since our dataset is balanced, and sample was taken from the main dataset. 
+Based on model evaluation, Stacking Model using base models (Linear SVC, Naive Bayes & Logistic Regression) performed the best accuracy score 83.33 compared to others. We are focussing on metrics Accuracy since our dataset is balanced, and sample was taken from the main dataset. 
 
 Confusion matrix and Classification report implies that our Stakeholder can focus on True Negative and False Positive, means patient's Drug effect was Negative, these patients needs immediate follow up to diagnose why Drug failed to work.
 
