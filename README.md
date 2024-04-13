@@ -48,17 +48,16 @@ as Metrics.
 ## Randomized SearchCV:
 
 After running Baseline Model with Random Forest, I used tuned hyperparameters through Randomized SearchCV to run next models. Since GridSearchCV
-consumes time consuming and less cost efficiency, chose Randomized SearchCV and ran with Scikit Learn Random Forest & XGBoost models. 
+consumes time consuming and less cost efficiency, chose Randomized SearchCV and ran with Scikit Learn Random Forest, XGBoost models and Naive Bayes. 
 
-Random Forest with RCV option scored the best Accuracy score 76, and XGBoost with RCV option scored 71 as Accuracy score. I got next better model
-as Random Forest with RCV option than our Baseline model, checking TensorFlow next.
+Random Forest with RCV option scored the best Accuracy score 76, XGBoost with RCV option scored 71 as Accuracy score, Naive Bayes with RCV option scored 66 as accuracy score. Random Forest with RCV option was our next better model than Baseline model, checking TensorFlow next.
 
 ## TensorFlow:
 
 Inputting the dense array of preprocessed column 'review' to TensorFlow Model Sequential(), and choose ('Binary cross entropy' as category, metric=
 'accuracy', epochs = 10, validation_size = 0.2 and Early stopping) to run first model with Tensorflow. Results showed best training scores and lower 
-test scores which clearly showed model was 'overfitting'. By applying Regularization l2, TensorFlow model resulted next best accuracy score 78.89, 
-and Training loss graph was slightly away from validation accuracy due to regularization applied.
+test scores which clearly showed model was 'overfitting'. By applying Regularization l2, TensorFlow model resulted next best accuracy score 78.2, 
+and Validation loss was away from Training loss in the graph due to regularization applied.
 
 <p align="center">
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/training_loss_history_tensor.jpeg" width = "600" height="451">
@@ -66,26 +65,18 @@ and Training loss graph was slightly away from validation accuracy due to regula
 
 ## Stacking:
 
-Stacking is a learning technique that combines all Base models predictions, and meta-model takes the predictions from the base models as input features and learns how to weigh or combine them effectively. I carefully selected 3 Base models based on following reasons to be best suited for text data.
-
-Linear Support Vector Classifier as first model, works often faster and more efficient when dealing with large datasets. Linear SVC is suitable for high-dimensional and sparse data, which is often the case with text data. 
-
-Using Naive Bayes as second model, which is probabilistic classifier that assumes independence between features (words) given the class. It is known for its simplicity and efficiency and can work well with text data (Input). Naive Bayes classifiers are based on the Bayes' theorem and make predictions by calculating the probability of a class given the observed features. They can handle high-dimensional data efficiently, making them suitable for text classification tasks.
-
-Random Forest as third model, another popular choice for binary classification with text data, and works efficiently for complexity. Choose Random Forest model which scored the best for randomized search CV option. 
- 
-Meta model: Logistic Regression. Stacking outperformed all other models, and scored **best Accuracy score 83.33**.
+Stacking is a learning technique that combines all Base models predictions, and meta-model takes the predictions from the base models as input features and learns how to weigh or combine them effectively. Choose Random Forest Classifier with Randomized search CV as first model, XGBoost with Randomized search CV as second model and Naive Bayes with Randomized search CV as third model as our Base model's predictions for Stacking Classifier. 
+  
+Meta model: Logistic Regression. Stacking outperformed all other models, and scored **best Accuracy score 82.25**.
 
 **Confusion Matrix for Stacking Model:**
 <p align="center">
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/confusionmatrix_stmodel.jpeg" width = "600" height="451">
 </p>
 
-False Positive: Negative Reviews which was assigned under Positive reviews, these patients needs immediate follow up appointment to diagnose why Drug
-failed to work.
+False Positive: Negative Reviews which was assigned under Positive reviews, patients who had negative effect or no effect after taking medication.
 
-False Negative: Positive reviews assigned under Negative reviews, means these patients are doing well after medication, and contact doctor office
-if they have any questions. 
+False Negative: Positive reviews assigned under Negative reviews, patients conditions was improved and medication worked perfectly well. 
 
 **Visualizing Feature Importance**
 <p align="center">
