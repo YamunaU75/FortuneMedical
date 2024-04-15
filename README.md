@@ -80,7 +80,7 @@ False Negative: Positive reviews assigned under Negative reviews, patients condi
 
 **Visualizing Feature Importance**
 <p align="center">
-    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/training_loss_history.jpeg" width = "650" height="400">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Top15Feature_Stmodel.jpeg" width = "650" height="400">
 </p>
 
 ## Topic Modeling:
