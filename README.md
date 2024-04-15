@@ -60,7 +60,7 @@ test scores which clearly showed model was 'overfitting'. By applying Regulariza
 and Validation loss was away from Training loss in the graph due to regularization applied.
 
 <p align="center">
-    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/training_loss_history_tensor.jpeg" width = "600" height="451">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/training_loss_history.jpeg" width = "600" height="451">
 </p>
 
 ## Stacking:
