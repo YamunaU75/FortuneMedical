@@ -80,7 +80,7 @@ False Negative: Positive reviews assigned under Negative reviews, patients condi
 
 **Visualizing Feature Importance**
 <p align="center">
-    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Top15Feature_Stmodel.jpeg" width = "650" height="400">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/training_loss_history.jpeg" width = "650" height="400">
 </p>
 
 ## Topic Modeling:
@@ -111,7 +111,7 @@ Finally, We also looked into Topic Modeling, this was very helpful to distinguis
 
 **Next Steps:**
 
-For Phase 2, we can look into using Word2Vec algorithm, widely used word representation technique. This type of word representation or Word Embeddings can be used to infer semantic similarity between words and phrases, expand queries, surface related concepts and more. Also how to correct spelling mistakes before running model using TextBlob or PySpellCheck python libraries.
+For Phase 2, we can look into using Word2Vec algorithm, widely used word representation technique. This type of word representation or Word Embeddings can be used to infer semantic similarity between words and phrases, expand queries, surface related concepts and more. Also how to correct spelling mistakes for medical terms before running model using TextBlob or PySpellCheck python libraries.
 
 ## Repository Structure
 
