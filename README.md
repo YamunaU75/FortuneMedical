@@ -55,9 +55,9 @@ Random Forest with RCV option scored the best Accuracy score 76, XGBoost with RC
 ## TensorFlow:
 
 Inputting the dense array of preprocessed column 'review' to TensorFlow Model Sequential(), and choose ('Binary cross entropy' as category, metric=
-'accuracy', epochs = 10, validation_size = 0.2 and Early stopping) to run first model with Tensorflow. Results showed best training scores and lower 
-test scores which clearly showed model was 'overfitting'. By applying Regularization l2, TensorFlow model resulted next best accuracy score 78.2, 
-and Validation loss was away from Training loss in the graph due to regularization applied.
+'accuracy', epochs = 10, validation_size = 0.15 and Early stopping) to run first model with Tensorflow. Results showed best training scores and lower 
+test scores which clearly showed model was 'overfitting'. By applying Regularization l2 and drop-out, TensorFlow model resulted next best accuracy score 79.3, 
+and Validation loss was slightly away from Training loss in the graph due to regularization applied.
 
 <p align="center">
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/training_loss_history.jpeg" width = "600" height="451">
