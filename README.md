@@ -107,7 +107,7 @@ Created web app using Editor Visual Code and Streamlit, pickled the final model 
 
 ## Conclusion:
 
-Based on model evaluation, Stacking Model using base models (Linear SVC, Naive Bayes & Logistic Regression) performed the best accuracy score 83.33 compared to others. We are focussing on metrics Accuracy since our dataset is balanced, and sample was taken from the main dataset. 
+Based on model evaluation, Stacking Model using base models (Linear SVC, Naive Bayes & Logistic Regression) performed the best accuracy score 82.25 compared to others. We are focussing on metrics Accuracy since our dataset is balanced, and sample was taken from the main dataset. 
 
 Confusion matrix and Classification report implies that our Stakeholder can focus on True Negative and False Positive, means patient's Drug effect was Negative, these patients needs immediate follow up to diagnose why Drug failed to work.
 
@@ -115,7 +115,7 @@ Finally, We also looked into Topic Modeling, this was very helpful to distinguis
 
 **Next Steps:**
 
-For Phase 2, we can look into using Word2Vec algorithm, widely used word representation technique. This type of word representation or Word Embeddings can be used to infer semantic similarity between words and phrases, expand queries, surface related concepts and more. Also how to correct spelling mistakes for medical terms before running model using TextBlob or PySpellCheck python libraries.
+For Phase 2, we can look into using Word2Vec algorithm, widely used word representation technique. This type of word representation or Word Embeddings can be used to infer semantic similarity between words and phrases, expand queries, surface related concepts and more. Also how to correct spelling mistakes for medical terms using TextBlob or PySpellCheck python libraries in next phase.
 
 ## Repository Structure
 
@@ -123,10 +123,11 @@ For Phase 2, we can look into using Word2Vec algorithm, widely used word represe
 ├── Data
 ├── .gitignore
 ├── FortuneMedicalMain.ipynb
+├── FortuneMedicalPresentation.pdf
 ├── README.md
 ├── TensorFlow.ipynb
 └── nmf.html
-└── FortuneMedicalPresentation.pdf
+
 ```
 
 
