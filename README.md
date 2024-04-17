@@ -109,6 +109,10 @@ Created web app using Editor Visual Code and Streamlit, pickled the final model 
 
 Based on model evaluation, Stacking Model using base models (Linear SVC, Naive Bayes & Logistic Regression) performed the best accuracy score 82.25 compared to others. We are focussing on metrics Accuracy since our dataset is balanced, and sample was taken from the main dataset. 
 
+<p align="center">
+    <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/Screenshot%202024-04-17%20182655.jpeg" width = "650" height="400">
+</p>
+
 Confusion matrix and Classification report implies that our Stakeholder can focus on True Negative and False Positive, means patient's Drug effect was Negative, these patients needs immediate follow up to diagnose why Drug failed to work.
 
 Finally, We also looked into Topic Modeling, this was very helpful to distinguish different Topics (`condition`) assuming Anxiety, BirthControl or Infertility, Pain. Also using python library pyLDAvis, we were able to visualize different topics with words associated with the respective topics.
