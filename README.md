@@ -101,6 +101,10 @@ html link: file:///C:/Users/uyamu/Documents/FortuneMedical/nmf_topics.html#topic
     <img src = "https://github.com/YamunaU75/FortuneMedical/blob/main/Data/TopicModeling.jpeg" width = "600" height="400">
 </p>
 
+## Web App using Streamlit:
+
+Created web app using Editor Visual Code and Streamlit, pickled the final model using pickle library from the main notebook. Web App was created successfully and checked the results using Stacking Model. Results ran successfully using our final Model, finally deploying the model soon.
+
 ## Conclusion:
 
 Based on model evaluation, Stacking Model using base models (Linear SVC, Naive Bayes & Logistic Regression) performed the best accuracy score 83.33 compared to others. We are focussing on metrics Accuracy since our dataset is balanced, and sample was taken from the main dataset. 
